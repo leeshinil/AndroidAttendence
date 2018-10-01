@@ -22,9 +22,9 @@ public class check extends AppCompatActivity {
         setContentView(R.layout.activity_check);
         //bind view
         mTextView = (TextView) findViewById(R.id.checkTime);
-        //while(true) {
+        while(true) {
             mTextView.setText(getTime());
-        //}
+        }
 
     }
     private String getTime(){
