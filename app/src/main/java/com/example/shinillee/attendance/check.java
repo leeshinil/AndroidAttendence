@@ -13,6 +13,7 @@ public class check extends AppCompatActivity {
     long mNow;
     Date mDate;
     SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+    private String test;
 
     TextView mTextView;
 
