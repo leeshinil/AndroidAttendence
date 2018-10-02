@@ -14,6 +14,8 @@ public class check extends AppCompatActivity {
     Date mDate;
     SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
+    String test;
+
     TextView mTextView;
 
     @Override
