@@ -1,10 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".sign_up">
 
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/nameText"
+        android:layout_centerHorizontal="true"
+        android:hint="이름"
+        android:layout_marginTop="50dp" />
 
-</LinearLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/studentNumText"
+        android:layout_centerHorizontal="true"
+        android:hint="학번"
+        android:layout_below="@+id/nameText" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/IdText"
+        android:layout_centerHorizontal="true"
+        android:hint="아이디"
+        android:layout_below="@+id/studentNumText" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/passwordText"
+        android:hint="비밀번호"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/IdText"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/phoneNumText"
+        android:hint="전화번호"
+        android:layout_below="@id/passwordText"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/mailAddressText"
+        android:hint="이메일"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phoneNumText"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="확인"
+        android:id="@+id/confirm_btn"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mailAddressText"
+        android:layout_toLeftOf="@+id/cancel_btn" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="취소"
+        android:id="@+id/cancel_btn"
+        android:textAllCaps="false"
+        android:layout_alignTop="@+id/confirm_btn"
+        android:layout_alignRight="@+id/mailAddressText" />
+
+</RelativeLayout>
