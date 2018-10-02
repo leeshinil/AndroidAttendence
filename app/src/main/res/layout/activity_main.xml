@@ -26,28 +26,28 @@
         android:layout_width="150dp"
         android:layout_height="55dp"
         android:text="Log in"
-        android:id="@+id/loginButton"
+        android:id="@+id/login"
         android:textAllCaps="false"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Password"
-        android:layout_toLeftOf="@+id/signupButton" />
+        android:layout_toLeftOf="@+id/signup" />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="55dp"
         android:text="Sign up"
-        android:id="@+id/signupButton"
+        android:id="@+id/signup"
         android:textAllCaps="false"
-        android:layout_alignTop="@+id/loginButton"
+        android:layout_alignTop="@+id/login"
         android:layout_alignRight="@+id/Password" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remember login"
+        android:text="Remember_login"
         android:id="@+id/checkBox"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/loginButton"
+        android:layout_below="@+id/login"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
