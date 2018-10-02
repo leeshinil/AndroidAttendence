@@ -14,8 +14,6 @@ public class check extends AppCompatActivity {
     Date mDate;
     SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
-    String test;
-
     TextView mTextView;
 
     @Override
@@ -24,9 +22,7 @@ public class check extends AppCompatActivity {
         setContentView(R.layout.activity_check);
         //bind view
         mTextView = (TextView) findViewById(R.id.checkTime);
-        while(true) {
-            mTextView.setText(getTime());
-        }
+        mTextView.setText(getTime());
 
     }
     private String getTime(){
